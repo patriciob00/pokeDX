@@ -19,7 +19,7 @@ deploy:
 	flutter create . --platform web
 
 	@echo "Building for web..."
-	flutter build web --base-href $(BASE_HREF) --release
+	flutter build web --base-href /${{ github.event.repository.name }}/
 
 	@echo "Deploying to git repository"
 	cd build/web && \
