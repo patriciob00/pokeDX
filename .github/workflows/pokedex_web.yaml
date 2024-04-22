@@ -31,7 +31,7 @@ jobs:
           git config --global user.email pbrunorb@hotmail.com
           git config --global user.name patriciob00
           git status
-          git remote add origin https://${{secrets.token}}@github.com/patriciob00/patriciob00.github.io.git
+          git remote add origin https://${{secrets.token}}@github.com/patriciob00/pokedex.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
